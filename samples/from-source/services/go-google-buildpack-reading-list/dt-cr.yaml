@@ -1,0 +1,51 @@
+apiVersion: openchoreo.dev/v1alpha1
+kind: DeploymentTrack
+metadata:
+  # Unique name of the deployment track within the component (namespace).
+  #
+  # +required
+  # +immutable
+  name: test-deployment-track-hansi
+  # Organization name that the resource belongs to.
+  #
+  # +immutable
+  namespace: default
+  annotations:
+    # Display name of the deployment track.
+    #
+    # +required
+    openchoreo.dev/display-name: Test Deployment Track Hansi
+    # Description of the deployment track.
+    #
+    # +optional
+    openchoreo.dev/description: Test Deployment Track Description
+  labels:
+    # Component name that this deployment track belongs to.
+    #
+    # +required
+    # +immutable
+    openchoreo.dev/component: reading-list-service-hansi
+    # Project name that this deployment track belongs to.
+    #
+    # +required
+    # +immutable
+    openchoreo.dev/project: default
+    # Organization name that the resource belongs to.
+    #
+    # +required
+    # +immutable
+    openchoreo.dev/organization: default
+spec:
+  # API version of the managed APIs that are exposed via this deployment track.
+  #
+  # This will only be applicable to the component types that expose managed APIs.
+  #
+  # +optional (default: v1.0)
+  apiVersion: v1.0
+  # Indicates if the auto deployment is enabled for the deployment track.
+  #
+  # If enabled, the deployment track will be automatically deploy the most recent deployable artifact to
+  # the first environment in the deployment pipeline.
+  #
+  # +optional (default: false)
+  autoDeploy: true
