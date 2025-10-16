@@ -12,7 +12,7 @@ spec:
       appPath: /service-go-reading-list
       revision:
         branch: main
-      url: https://github.com/openchoreo/sample-workloads
+      url: https://github.com/hanzjk/sample-workloads
     templateRef:
       name: google-cloud-buildpacks
 
@@ -30,7 +30,7 @@ spec:
     appPath: /service-go-reading-list
     revision:
       branch: main
-    url: https://github.com/openchoreo/sample-workloads
+    url: https://github.com/hanzjk/sample-workloads
   templateRef:
     name: google-cloud-buildpacks
 ---
