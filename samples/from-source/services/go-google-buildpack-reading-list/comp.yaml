@@ -7,3 +7,13 @@ spec:
   owner:
     projectName: default
   type: Service
+  build:
+    repository:
+      appPath: /service-go-reading-list
+      revision:
+        branch: main
+      url: https://github.com/hanzjk/sample-workloads
+      authentication:
+        secretRef:
+    templateRef:
+      name: google-cloud-buildpacks
