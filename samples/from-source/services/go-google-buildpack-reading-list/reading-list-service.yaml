@@ -1,7 +1,7 @@
 apiVersion: openchoreo.dev/v1alpha1
 kind: Component
 metadata:
-  name: reading-list-service
+  name: reading-list-service-hansi
   namespace: default
 spec:
   owner:
