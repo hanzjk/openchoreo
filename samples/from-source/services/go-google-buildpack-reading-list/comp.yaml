@@ -9,11 +9,9 @@ spec:
   type: Service
   build:
     repository:
-      appPath: /service-go-reading-list
+      appPath:
       revision:
-        branch: main
-      url: https://github.com/hanzjk/sample-workloads
-      authentication:
-        secretRef:
+        branch:
+      url: 
     templateRef:
       name: google-cloud-buildpacks
