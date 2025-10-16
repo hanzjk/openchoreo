@@ -35,17 +35,3 @@ metadata:
     # +required
     # +immutable
     openchoreo.dev/organization: default
-spec:
-  # API version of the managed APIs that are exposed via this deployment track.
-  #
-  # This will only be applicable to the component types that expose managed APIs.
-  #
-  # +optional (default: v1.0)
-  apiVersion: v1.0
-  # Indicates if the auto deployment is enabled for the deployment track.
-  #
-  # If enabled, the deployment track will be automatically deploy the most recent deployable artifact to
-  # the first environment in the deployment pipeline.
-  #
-  # +optional (default: false)
-  autoDeploy: true
