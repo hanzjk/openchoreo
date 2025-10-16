@@ -7,7 +7,7 @@ metadata:
   #
   # +required
   # +immutable
-  name: test-deployment-hansi
+  name: test-deployment-hansi-2
   # Organization name that the resource belongs to.
   #
   # +immutable
