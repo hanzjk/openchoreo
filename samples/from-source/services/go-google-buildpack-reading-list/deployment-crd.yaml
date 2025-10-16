@@ -55,6 +55,6 @@ spec:
   # Reference to the deployment artifact that is being deployed.
   #
   # +required
-  deploymentArtifactRef: reading-list-service-hansi-build-01
+  deploymentArtifactRef: test-deployable-artifact-hansi
   # Overrides for the configuration coming from the deployment artifact before being deployed.
   # This can be used to set environment specific configurations.
