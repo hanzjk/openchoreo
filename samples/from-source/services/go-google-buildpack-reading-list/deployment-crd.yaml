@@ -1,0 +1,60 @@
+apiVersion: openchoreo.dev/v1alpha1
+kind: Deployment
+metadata:
+  # Unique name of the deployment that belongs to the deployment track and environment (namespace).
+  #
+  # Only one deployment can be available for a given deployment track and environment.
+  #
+  # +required
+  # +immutable
+  name: test-deployment-hansi
+  # Organization name that the resource belongs to.
+  #
+  # +immutable
+  namespace: default
+  annotations:
+    # Display name of the deployment.
+    #
+    # +required
+    openchoreo.dev/display-name: Test Deployment Hansi
+    # Description of the deployment.
+    #
+    # +optional
+    openchoreo.dev/description: Test Deployment Description
+  labels:
+    # Deployment track that this deployment belongs to.
+    #
+    # +required
+    # +immutable
+    openchoreo.dev/deployment-track: test-deployment-track-hansi
+    # Component name that this deployment belongs to.
+    #
+    # +required
+    # +immutable
+    openchoreo.dev/component: reading-list-service-hansi
+    # Project name that this deployment belongs to.
+    #
+    # +required
+    # +immutable
+    openchoreo.dev/project: default
+    # Environment name that this deployment belongs to.
+    #
+    # +required
+    # +immutable
+    openchoreo.dev/environment: development
+    # Organization name that the resource belongs to.
+    #
+    # +required
+    # +immutable
+    openchoreo.dev/organization: default
+spec:
+  # Sets the number of deployment revisions to keep for rollback.
+  #
+  # +optional (default: 10)
+  revisionHistoryLimit: 10
+  # Reference to the deployment artifact that is being deployed.
+  #
+  # +required
+  deploymentArtifactRef: reading-list-service-hansi-build-01
+  # Overrides for the configuration coming from the deployment artifact before being deployed.
+  # This can be used to set environment specific configurations.
