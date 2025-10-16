@@ -20,11 +20,11 @@ spec:
 apiVersion: openchoreo.dev/v1alpha1
 kind: Build
 metadata:
-  name: reading-list-service-build-01
+  name: reading-list-service-hansi-build-01
   namespace: default
 spec:
   owner:
-    componentName: reading-list-service
+    componentName: reading-list-service-hansi
     projectName: default
   repository:
     appPath: /service-go-reading-list
@@ -37,13 +37,13 @@ spec:
 apiVersion: openchoreo.dev/v1alpha1
 kind: Service
 metadata:
-  name: reading-list-service
+  name: reading-list-service-hansi
   namespace: default
 spec:
   owner:
-    componentName: reading-list-service
+    componentName: reading-list-service-hansi
     projectName: default
-  workloadName: go-reading-list-service
+  workloadName: go-reading-list-service-hansi
   className: default
   apis:
     reading-list-api: 
