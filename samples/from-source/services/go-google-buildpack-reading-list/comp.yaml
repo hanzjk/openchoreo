@@ -7,11 +7,3 @@ spec:
   owner:
     projectName: default
   type: Service
-  build:
-    repository:
-      appPath:
-      revision:
-        branch:
-      url: 
-    templateRef:
-      name: google-cloud-buildpacks
