@@ -1,7 +1,7 @@
 apiVersion: openchoreo.dev/v1alpha1
 kind: Component
 metadata:
-  name: reading-list-service-hansi-5
+  name: reading-list-service-hansi-6
   namespace: default
 spec:
   owner:
@@ -9,7 +9,7 @@ spec:
   type: Service
   build:
     repository:
-      appPath: /service-go-reading-list
+      appPath: /service-go-reading-listf
       revision:
         branch: main
       url: https://github.com/hanzjk/sample-workloads
@@ -20,11 +20,11 @@ spec:
 apiVersion: openchoreo.dev/v1alpha1
 kind: Build
 metadata:
-  name: reading-list-service-hansi-build-05
+  name: reading-list-service-hansi-build-06
   namespace: default
 spec:
   owner:
-    componentName: reading-list-service-hansi-5
+    componentName: reading-list-service-hansi-6
     projectName: default
   repository:
     appPath: /service-go-reading-list
@@ -37,13 +37,13 @@ spec:
 apiVersion: openchoreo.dev/v1alpha1
 kind: Service
 metadata:
-  name: reading-list-service-hansi-5
+  name: reading-list-service-hansi-6
   namespace: default
 spec:
   owner:
-    componentName: reading-list-service-hansi-5
+    componentName: reading-list-service-hansi-6
     projectName: default
-  workloadName: reading-list-service-hansi-5-workload
+  workloadName: reading-list-service-hansi-6-workload
   className: default
   apis:
     reading-list-api: 
