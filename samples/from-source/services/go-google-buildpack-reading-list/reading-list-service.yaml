@@ -43,7 +43,7 @@ spec:
   owner:
     componentName: reading-list-service-hansi-9
     projectName: default
-  workloadName: reading-list-service-hansi-9-workload
+  workloadName: reading-list-service-hansi-9
   className: default
   apis:
     reading-list-api: 
