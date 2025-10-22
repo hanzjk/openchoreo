@@ -9,7 +9,7 @@ spec:
   type: Service
   build:
     repository:
-      appPath: /service-go-reading-listf
+      appPath: /service-go-reading-list
       revision:
         branch: main
       url: https://github.com/hanzjk/sample-workloads
