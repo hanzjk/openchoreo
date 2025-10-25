@@ -1,0 +1,5 @@
+apiVersion: openchoreo.dev/v1alpha1
+kind: DeploymentPipeline
+metadata:
+  name: default-deployment-pipeline-v1
+  namespace: default
