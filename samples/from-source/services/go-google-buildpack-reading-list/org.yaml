@@ -2,3 +2,7 @@ apiVersion: openchoreo.dev/v1alpha1
 kind: Organization
 metadata:
   name: hansi
+  annotations:
+    openchoreo.dev/display-name: hansi Organization
+    openchoreo.dev/description: This is a new org
+spec: { }
