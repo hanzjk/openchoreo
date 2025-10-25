@@ -1,4 +1,4 @@
 apiVersion: openchoreo.dev/v1alpha1
 kind: Organization
 metadata:
-  name: <organization-name>
+  name: hansi
