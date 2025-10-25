@@ -1,5 +1,7 @@
 apiVersion: openchoreo.dev/v1alpha1
 kind: Project
 metadata:
-  name: default
-  namespace: hansi
+  name: default-1
+  namespace: default
+spec:
+  deploymentPipelineRef: default-deployment-pipeline-v1
