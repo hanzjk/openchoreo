@@ -1,0 +1,16 @@
+apiVersion: openchoreo.dev/v1alpha1
+kind: Build
+metadata:
+  name: reading-list-service-build-02
+  namespace: default
+spec:
+  owner:
+    componentName: reading-list-service
+    projectName: default
+  repository:
+    appPath: /service-go-reading-list
+    revision:
+      branch: main
+    url: https://github.com/openchoreo/sample-workloads
+  templateRef:
+    name: google-cloud-buildpacks
