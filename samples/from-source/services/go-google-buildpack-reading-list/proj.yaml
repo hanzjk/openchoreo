@@ -1,0 +1,5 @@
+apiVersion: openchoreo.dev/v1alpha1
+kind: Project
+metadata:
+  name: default
+  namespace: hansi
