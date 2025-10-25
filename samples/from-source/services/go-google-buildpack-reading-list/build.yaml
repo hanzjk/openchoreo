@@ -1,7 +1,7 @@
 apiVersion: openchoreo.dev/v1alpha1
 kind: Build
 metadata:
-  name: reading-list-service-build-04
+  name: reading-list-service-build-05
   namespace: default
 spec:
   owner:
