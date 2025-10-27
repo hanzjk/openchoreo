@@ -6,3 +6,4 @@ metadata:
 spec:
   promotionPaths:
     - sourceEnvironmentRef: development
+      targetEnvironmentRef: {}
